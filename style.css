@@ -1,0 +1,86 @@
+/*Fundo pagina Cores Letras/Tamanhos etc.*/
+body,html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #666;
+}
+
+.pimg1,.pimg2,.pimg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+/*
+Fixed=Parallax
+Scroll=Normal
+*/
+background-attachment: fixed;
+}
+
+/*Imagem fundo por completo*/
+
+.pimg1{
+    background-image: url("IMG/image1.jpg");
+    min-height: 400px;
+}
+
+.pimg2{
+    background-image: url("IMG/image2.jpg");
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url("IMG/image3.jpg");
+    min-height: 400px;
+}
+
+/*Alinhamento do Texto da Pagina*/
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+/*Cor de Fundo do Primeiro Texto*/
+.section-light{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+/*Cor de Fundo do Segundo e Terceiro Texto*/
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext.border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext.border.trans{
+    background-color: transparent;
+}
+
+@media(max-width: 568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+}
